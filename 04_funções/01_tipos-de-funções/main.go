@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+	defer fmt.Println("Defer → \"Deixa pra última hora,\" ou seja, isso aqui vai rodar por último.")
 	simples()
 	argumento("Isso é um exemplo de argumento.")
 	argumento("Isso é outro exemplo de argumento.")
@@ -22,7 +23,18 @@ func main() {
 	função := retornaFunção()
 	função()
 	euReceboFunçãoComoArgumento(euFaloArgumento)
-
+	fmt.Println("E pra fechar temos closures, que vamos explicar falando e não escrevendo!")
+	fmt.Print("a: ")
+	a := contador()
+	a()
+	a()
+	a()
+	fmt.Print("\nb: ")
+	b := contador()
+	b()
+	b()
+	b()
+	fmt.Println("")
 }
 
 func simples() {
@@ -63,15 +75,10 @@ func euFaloArgumento() string {
 	return "argumento."
 }
 
-// - Função simples
-// - Função que aceita um argumento
-// - Função com retorno
-// - Função com múltiplos argumentos e múltiplos retornos
-// - Função variádica
-// - Passando um slice como argumento para uma função variádica
-// - Função anônima
-// - Função como expressão: f := func(p params){ code }
-// - Retornando uma função
-// 	- func f() func() int { [...]; return func() int{ return [int] } }
-// - Callbacks: passando funções como argumentos
-// - Closure
+func contador() func() {
+	total := 0
+	return func() {
+		total++
+		fmt.Print(total, " ")
+	}
+}
