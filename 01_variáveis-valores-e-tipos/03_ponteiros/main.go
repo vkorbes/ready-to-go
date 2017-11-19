@@ -4,14 +4,14 @@ import "fmt"
 
 func main() {
 	variável := 10
-	fmt.Println(variável)
+	fmt.Printf("variável  = %v\n", variável)
 	// 1. "&" mostra o endereço de uma variável
-	fmt.Println(&variável)
+	fmt.Printf("&variável = %v\n", &variável)
 	endereço := &variável
-	fmt.Println(endereço)
+	fmt.Printf("endereço  = %v\n", endereço)
 	// 2. "*" faz o de-reference, mostrando o conteúdo da localização pra onde um endereco aponta.
 	*endereço++
-	fmt.Println(*endereço)
+	fmt.Printf("variável + 1 = %v\n", *endereço)
 	// 3. E dá pra usar os dois ao mesmo tempo. YOLO.
-	fmt.Println(*&variável)
+	fmt.Printf("*&variável   = %v\n", *&variável)
 }
