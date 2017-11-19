@@ -38,7 +38,7 @@ func main() {
 // 	case val := <-ch:
 // 		fmt.Println(val)
 // 	default:
-// 		fmt.Println("Não tenho paciência")
+// 		//fmt.Println("Não tenho paciência")
 // 	}
 // }
 
@@ -64,4 +64,5 @@ func main() {
 // 		fmt.Println(val)
 // 	case val2 := <-ch2:
 // 		fmt.Println("outro val", val2)
+// 	}
 // }
