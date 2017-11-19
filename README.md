@@ -4,5 +4,5 @@ This is material for the `Ready to Go: Uma introdução prática à linguagem Go
 
 # Setup
 
-[PT-BR](INSTALL-PTBR.md)
+[PT-BR](INSTALL_PTBR.md)
 
