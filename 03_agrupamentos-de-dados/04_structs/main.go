@@ -51,5 +51,6 @@ func main() {
 		porfim:     "Por fim, temos os structs anônimos",
 		parenteses: "(que são, tipo, descartáveis).",
 	}
+
 	fmt.Println(anônimo)
 }

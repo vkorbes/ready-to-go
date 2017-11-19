@@ -145,9 +145,18 @@
 - JSON 
 - marshal e unmarshal
 - marshal/unmarshal vs. encoder/decoder
+	- https://play.golang.org/p/_JvCOlK-H9
+	- https://play.golang.org/p/l6wbuLu1NS
+	- https://play.golang.org/p/Pgwr0O07aL
 - Package sort
 	- Utilizando os sorts pré-prontos
+	    - sort.Strings: https://play.golang.org/p/Rs1NVwmg7h
+    	- sort.Ints: https://play.golang.org/p/I2_vsHujZa
 	- Criando nosso próprio sort
+		- https://play.golang.org/p/KOIhAsE3OK
+- Canais
+	- Converge: https://github.com/ellenkorbes/go-aprenda-a-programar/blob/master/21_canais/07/todd/main.go
+	- Diverge e converge: https://github.com/ellenkorbes/go-aprenda-a-programar/blob/master/21_canais/08/01/main.go
 - bcrypt
 	- Gerando hashes
 	- Testando senhas contra hashes salvos
