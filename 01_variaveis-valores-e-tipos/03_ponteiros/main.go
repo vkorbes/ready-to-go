@@ -13,5 +13,6 @@ func main() {
 	*endereço++
 	fmt.Printf("variável + 1 = %v\n", *endereço)
 	// 3. E dá pra usar os dois ao mesmo tempo. YOLO.
+	//                                ↓↓
 	fmt.Printf("*&variável   = %v\n", *&variável)
 }
