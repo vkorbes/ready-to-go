@@ -6,6 +6,7 @@ import (
 )
 
 type pessoa struct {
+	// Maiúsculas!
 	Nome          string
 	Sobrenome     string
 	Idade         int
@@ -35,4 +36,6 @@ func main() {
 
 	fmt.Println(string(j))
 	fmt.Println(string(d))
+	// fmt.Println(j)
+	// fmt.Println(d)
 }

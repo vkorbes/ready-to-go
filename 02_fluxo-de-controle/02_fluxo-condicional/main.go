@@ -11,7 +11,7 @@ func main() {
 			fmt.Print("que faz a execução de acordo ")
 		case i == 2:
 			fmt.Println("com os cases específicados.")
-		} // ↓ "i" é o switch statement
+		} //   ↓ "i" é o switch statement
 		switch i {
 		case 3:
 			fmt.Print("O switch statement é true por padrão. ")

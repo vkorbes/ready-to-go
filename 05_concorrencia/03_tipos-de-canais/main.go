@@ -27,7 +27,7 @@ func main() {
 		ch2 <- 5
 	}()
 
-	// 6. Se você tentar gravar no canal bufered mais valores do que a sua capacidade
+	// 6. Se você tentar gravar no canal buffered mais valores do que a sua capacidade
 	// o canal também vai bloquear (experimente)
 
 	for val := range ch2 {

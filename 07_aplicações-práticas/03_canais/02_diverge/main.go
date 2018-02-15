@@ -29,7 +29,7 @@ func manda(n int, canal chan int) {
 
 func outra(canal1, canal2 chan int) {
 	var wg sync.WaitGroup
-
+	// Pra cada item que canal1 receber, uma nova gofunc é criada que manda resultados pro canal2
 	for v := range canal1 {
 		wg.Add(1)
 		go func(x int) {
@@ -42,6 +42,6 @@ func outra(canal1, canal2 chan int) {
 }
 
 func trabalho(n int) int {
-	time.Sleep(time.Millisecond * time.Duration(rand.Intn(1e3)))
+	time.Sleep(time.Millisecond * time.Duration(rand.Intn(1e4)))
 	return n
 }
